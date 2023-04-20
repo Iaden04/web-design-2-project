@@ -1,0 +1,146 @@
+:root {
+  --font-size-sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
+  --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+  --font-size-md: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+  --font-size-lg: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+  --font-size-xl: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
+  --font-size-xxl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+  --font-size-xxxl: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
+
+  --white: #fff;
+}
+  
+  *,
+  *::before,
+  *::after {
+      box-sizing: border-box;
+  }
+
+h1 {
+  font-family: 'Noto Sans', sans-serif;font-weight: 100;
+  font-size: var(--font-size-xxl);
+  color: var(--white);
+  }
+
+h2 {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 200;
+  font-size: var(--font-size-lg);
+  color: var(--white);
+  }
+
+blockquote, figcaption {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: var(--font-size-xxl);
+}
+
+p{
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 400;
+  color: var(--white);
+}
+h2, p {
+ font-size: var(--font-size-xl);
+}
+}
+a{
+  text-decoration: none;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+
+  }
+  nav ul li {
+    margin: .5em;
+  }
+  nav ul li:nth-child(2){
+    flex-grow: 1;
+  }
+  nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+html{
+  background-color: #A1744F;
+  scroll-behavior: smooth;
+  line-height: 1.4;
+}
+header{
+  display: flex;
+  justify-content:left
+  padding: 1.5em 0;
+  align-items: center;
+  background-color: #868F72;
+}
+
+figure{
+  display: flex;
+}
+body{
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 400;
+  margin: 0;
+  font-size: var(--font-size-base);
+}
+
+#meaning {
+  background-image: url(images/ghibli-bg.jpg);
+  padding: 20rem 0;
+  background-size: cover;
+  opacity: 70%;
+}
+footer{
+  text-decoration: none;
+  color: var(--white);
+  text-align: center;
+  margin: 1rem;
+}
+
+
+
+/* mobile first*/
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+
+/* tablet*/
+
+ @media screen and (min-width: 38em) {
+  
+  .container {
+    width: 788px;
+    margin: 0 auto;
+  }
+  .container-grid {
+    width: 788px;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+
+/* desktop*/
+
+@media only screen and (min-width: 60em) {
+
+  .container {
+      width: 1640px;
+      margin: 0 auto;
+    }
+  .staff {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+    justify-content: center;
+    color: var(--white);
+    gap: 4.4em;
+    }
+    .animator {
+      text-align: center;
+    }

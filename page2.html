@@ -4,28 +4,36 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
   <title>Document</title>
 </head>
 <body>
 
-  <h1> Studio Ghibli</h1>
-  <nav>
-    <li><a href="Home">Home</a></li>
-    <li><a href="Studio">Studio</a></li>
-    <li><a href="Awards/Directors">Awards/Directors</a></li>
-    <li><a href="Films">Films</a></li>
-  </nav>
+  <header>
+    <div class="container">
+    <nav>
+      <ul>
+        <li><a href="index.html" class="logo"><img src="images/logo.png" alt="logo"></a></li>
+      <li><h1>Studio Ghibli</h1></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="page2.html">Studio</a></li>
+      <li><a href="page3.html">Films</a></li>
+    </ul>
+    </nav>
+  </div>
+  </header>
   <section class="TS">
-    <div>
+    <div class="container">
       <h1> The Studio</h1>
       <p>Studio Ghibli, Inc. (Japanese: 株式会社スタジオジブリ, Hepburn: Kabushiki-gaisha Sutajio Jiburi) is a Japanese animation studio based in Koganei, Tokyo. It has a strong presence in the animation industry and has expanded its portfolio to include various media formats, such as short subjects, television commercials, and two television films. Their work has been well-received by audiences and has even been recognized with awards. </p>
     </div>
   </section>
-  <section class="animators">
-    <h1>Studio Ghibli's Animators and Directors</h1>
+  <div class="container-grid">
+  <section>
+    <h1 class="animator">Studio Ghibli's Animators and Directors</h1>
     <div class="staff">
       <article class="staffinfo">
-        <img src="images/hayao-miyazaki.jpg" alt="">
+        <img src="images/hayao-miyazaki-1.jpg" alt="">
         <h3>Hayao Miyazaki</h3>
         <button>Profile</button>
       </article>
@@ -56,20 +64,48 @@
       </article>
     </div>
     <section class="Awards">
-      <div>
+      <div class="container">
+    </div>
         <h1>Awards and Prizes</h1>
         <p>Studio Ghibli has been nominated for 49 awards and has won a total of 80, here are their most notable awards.</p>
       </div>
-
+      <div class="award">
+        <article class="award-1">
+          <img src="images/spirited.jpg" alt="spirited away">
+          <h3>Oscars</h3>
+          <p>Best Animated Feature
+            Spirited Away/ Sen to Chihiro no kamikakushi (2001)</p>
+        </article>
+        <article class="award-2">
+          <img src="images/only.jpg" alt="">
+          <h3>Hochi Award</h3>
+          <p>Animation of the Year
+            Howl's Moving Castle/ Hauru no ugoku shiro (2004)</p>
+        </article>
+        <article class="award-3">
+          <img src="images/castle.jpg" alt="">
+          <h3>Annie Award</h3>
+          <p>Outstanding Achievement in Writing in an Animated Feature Production - The Wind Rises /
+            Kaze tachinu (2013)</p>
+        </article>
+        <article class="award-4">
+          <img src="images/ponyo.jpg" alt="">
+          <h3>Tokyo Award</h3>
+          <p>Best Director - Ponyo /Gake no ue no Ponyo (2008)</p>
+        </article>
+        </div>
+      </div>
     </section>
     
   </section>
 </body>
 <footer>
+  <footer>
+<div class="container">
   <ul>
-    <li><a href="#"></a>Wiki Page</li>
-    <li><a href="#"></a>Trailers</li>
-    <li><a href="#"></a>Studio</li>
+    <small>&copy;Ibrahim Mohamed</small>
   </ul>
+</div>
+</footer>
 </footer>
 </html>
